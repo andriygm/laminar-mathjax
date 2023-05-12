@@ -18,7 +18,7 @@ object MathJax {
 
   val inputJax = new TeX[dom.HTMLElement, dom.Text, dom.Document](
     new OptionList {
-      val packages = AllPackages.sort().join(", ")
+      val packages = AllPackages
       val inlineMath = js.Array(js.Array("$", "$"))
     }
   )
